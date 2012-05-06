@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pro 101 Specialty Feature feature.
+ */
+
+include_once('pro_101_specialties_feature.features.inc');
