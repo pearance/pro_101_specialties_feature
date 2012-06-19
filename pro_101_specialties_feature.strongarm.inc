@@ -13,16 +13,25 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_specialty';
-  $strongarm->value = 'edit-xmlsitemap';
-  $export['additional_settings__active_tab_specialty'] = $strongarm;
+  $strongarm->name = 'auto_menutitle_specialty';
+  $strongarm->value = 0;
+  $export['auto_menutitle_specialty'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_specialty';
-  $strongarm->value = 0;
-  $export['auto_menutitle_specialty'] = $strongarm;
+  $strongarm->name = 'contentanalysis_specialty';
+  $strongarm->value = array(
+    0 => 'enable',
+  );
+  $export['contentanalysis_specialty'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'contentanalysis_type_specialty_enable';
+  $strongarm->value = 1;
+  $export['contentanalysis_type_specialty_enable'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -70,6 +79,20 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_label_specialty';
+  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
+  $export['maxlength_js_label_specialty'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_specialty';
+  $strongarm->value = '';
+  $export['maxlength_js_specialty'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_specialty';
   $strongarm->value = array();
   $export['menu_options_specialty'] = $strongarm;
@@ -110,6 +133,27 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->name = 'pathauto_node_specialty_pattern';
   $strongarm->value = 'specialty/[node:title]';
   $export['pathauto_node_specialty_pattern'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_specialty';
+  $strongarm->value = '0';
+  $export['rh_node_action_specialty'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_specialty';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_specialty'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_specialty';
+  $strongarm->value = '';
+  $export['rh_node_redirect_specialty'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
