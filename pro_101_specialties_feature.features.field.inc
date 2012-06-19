@@ -10,7 +10,7 @@
 function pro_101_specialties_feature_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-specialty-body'
+  // Exported field: 'node-specialty-body'.
   $fields['node-specialty-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function pro_101_specialties_feature_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -85,7 +86,7 @@ function pro_101_specialties_feature_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-specialty-field_title_graphic'
+  // Exported field: 'node-specialty-field_title_graphic'.
   $fields['node-specialty-field_title_graphic'] = array(
     'field_config' => array(
       'active' => '1',
@@ -106,6 +107,7 @@ function pro_101_specialties_feature_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -136,6 +138,7 @@ function pro_101_specialties_feature_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
+        'default_image' => 0,
         'file_directory' => 'images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -156,11 +159,11 @@ function pro_101_specialties_feature_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
-            0 => 0,
             'audio' => 0,
             'default' => 0,
+            0 => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 0,
