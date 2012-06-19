@@ -40,4 +40,5 @@ features[variable][] = rh_node_redirect_response_specialty
 features[variable][] = rh_node_redirect_specialty
 features[variable][] = show_diff_inline_specialty
 features[variable][] = show_preview_changes_specialty
+features[variable][] = xmlsitemap_settings_node_specialty
 features[views_view][] = specialties
