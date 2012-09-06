@@ -56,11 +56,15 @@ function pro_101_specialties_feature_field_default_fields() {
         ),
         'default' => array(
           'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'full' => array(
+          'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
+          'settings' => array(),
+          'type' => 'text_default',
           'weight' => '1',
         ),
         'teaser' => array(
@@ -141,6 +145,22 @@ function pro_101_specialties_feature_field_default_fields() {
         ),
         'default' => array(
           'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => 'medium',
+          ),
+          'type' => 'image',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => 'content',
@@ -177,11 +197,11 @@ function pro_101_specialties_feature_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
-            0 => 0,
             'audio' => 0,
             'default' => 0,
+            0 => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 0,

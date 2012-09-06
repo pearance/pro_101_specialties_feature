@@ -47,15 +47,18 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'teaser' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'colorbox' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -71,7 +74,22 @@ function pro_101_specialties_feature_strongarm() {
           'weight' => '3',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'flippy_pager' => array(
+          'default' => array(
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '5',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '5',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__specialty'] = $strongarm;
