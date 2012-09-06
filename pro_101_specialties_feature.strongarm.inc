@@ -97,6 +97,62 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_firstlast_specialty';
+  $strongarm->value = 0;
+  $export['flippy_firstlast_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_first_label_specialty';
+  $strongarm->value = 'First';
+  $export['flippy_first_label_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_head_specialty';
+  $strongarm->value = 1;
+  $export['flippy_head_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_label_type_specialty';
+  $strongarm->value = '0';
+  $export['flippy_label_type_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_last_label_specialty';
+  $strongarm->value = 'Last';
+  $export['flippy_last_label_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_next_label_specialty';
+  $strongarm->value = 'Next';
+  $export['flippy_next_label_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_prev_label_specialty';
+  $strongarm->value = 'Previous';
+  $export['flippy_prev_label_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_specialty';
+  $strongarm->value = 1;
+  $export['flippy_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'maxlength_js_label_specialty';
   $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
   $export['maxlength_js_label_specialty'] = $strongarm;
@@ -121,6 +177,34 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->name = 'menu_parent_specialty';
   $strongarm->value = 'menu-specialties:0';
   $export['menu_parent_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_comment_link_specialty';
+  $strongarm->value = '0';
+  $export['nodeblock_comment_link_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_node_link_specialty';
+  $strongarm->value = '0';
+  $export['nodeblock_node_link_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_specialty';
+  $strongarm->value = '0';
+  $export['nodeblock_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_view_mode_specialty';
+  $strongarm->value = 'full';
+  $export['nodeblock_view_mode_specialty'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -186,6 +270,13 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->name = 'show_preview_changes_specialty';
   $strongarm->value = 1;
   $export['show_preview_changes_specialty'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_specialty';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_specialty'] = $strongarm;
 
   return $export;
 }
