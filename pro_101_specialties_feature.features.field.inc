@@ -94,7 +94,7 @@ function pro_101_specialties_feature_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -213,7 +213,7 @@ function pro_101_specialties_feature_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );

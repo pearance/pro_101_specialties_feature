@@ -46,6 +46,7 @@ features[variable][] = nodeblock_comment_link_specialty
 features[variable][] = nodeblock_node_link_specialty
 features[variable][] = nodeblock_specialty
 features[variable][] = nodeblock_view_mode_specialty
+features[variable][] = nodeformscols_field_placements_specialty_default
 features[variable][] = pathauto_node_specialty_pattern
 features[variable][] = rh_node_action_specialty
 features[variable][] = rh_node_redirect_response_specialty
