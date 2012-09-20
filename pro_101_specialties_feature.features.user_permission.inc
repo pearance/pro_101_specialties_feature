@@ -37,7 +37,6 @@ function pro_101_specialties_feature_user_default_permissions() {
     'name' => 'delete own specialty content',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'node',
   );
