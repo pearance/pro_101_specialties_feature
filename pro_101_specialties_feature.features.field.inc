@@ -63,7 +63,10 @@ function pro_101_specialties_feature_field_default_fields() {
         'full' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '1',
         ),
@@ -71,6 +74,8 @@ function pro_101_specialties_feature_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -153,6 +158,8 @@ function pro_101_specialties_feature_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'image_link' => 'content',
             'image_style' => 'medium',
           ),
@@ -163,6 +170,8 @@ function pro_101_specialties_feature_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'image_link' => 'content',
             'image_style' => 'medium',
           ),
@@ -197,11 +206,11 @@ function pro_101_specialties_feature_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
-            0 => 0,
             'audio' => 0,
             'default' => 0,
+            0 => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 0,
