@@ -113,7 +113,7 @@ function pro_101_specialties_feature_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_title_graphic',
       'field_permissions' => array(
-        'type' => '2',
+        'type' => '0',
       ),
       'foreign keys' => array(
         'fid' => array(

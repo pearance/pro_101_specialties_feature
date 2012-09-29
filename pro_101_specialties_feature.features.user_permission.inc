@@ -26,8 +26,10 @@ function pro_101_specialties_feature_user_default_permissions() {
   $permissions['delete any specialty content'] = array(
     'name' => 'delete any specialty content',
     'roles' => array(
-      0 => 'developer',
-      1 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'node',
   );
