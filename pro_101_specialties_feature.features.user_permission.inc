@@ -67,5 +67,68 @@ function pro_101_specialties_feature_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: enter specialty revision log entry.
+  $permissions['enter specialty revision log entry'] = array(
+    'name' => 'enter specialty revision log entry',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override specialty authored by option.
+  $permissions['override specialty authored by option'] = array(
+    'name' => 'override specialty authored by option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override specialty authored on option.
+  $permissions['override specialty authored on option'] = array(
+    'name' => 'override specialty authored on option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override specialty promote to front page option.
+  $permissions['override specialty promote to front page option'] = array(
+    'name' => 'override specialty promote to front page option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override specialty published option.
+  $permissions['override specialty published option'] = array(
+    'name' => 'override specialty published option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override specialty revision option.
+  $permissions['override specialty revision option'] = array(
+    'name' => 'override specialty revision option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override specialty sticky option.
+  $permissions['override specialty sticky option'] = array(
+    'name' => 'override specialty sticky option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
   return $permissions;
 }
