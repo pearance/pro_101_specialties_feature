@@ -65,7 +65,7 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'diff_view_mode_preview_node_specialty';
-  $strongarm->value = 'diff_complete';
+  $strongarm->value = '';
   $export['diff_view_mode_preview_node_specialty'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -103,6 +103,9 @@ function pro_101_specialties_feature_strongarm() {
       'colorbox' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -130,8 +133,12 @@ function pro_101_specialties_feature_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '5',
-            'visible' => TRUE,
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+          'rss' => array(
+            'weight' => '2',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -178,14 +185,14 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'flippy_next_label_specialty';
-  $strongarm->value = 'Next';
+  $strongarm->value = '';
   $export['flippy_next_label_specialty'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'flippy_prev_label_specialty';
-  $strongarm->value = 'Previous';
+  $strongarm->value = '';
   $export['flippy_prev_label_specialty'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -220,7 +227,7 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_specialty';
-  $strongarm->value = 'menu-specialties:0';
+  $strongarm->value = 'menu-auxiliary:0';
   $export['menu_parent_specialty'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -273,19 +280,19 @@ function pro_101_specialties_feature_strongarm() {
       'region' => 'right',
       'weight' => '0',
       'has_required' => FALSE,
-      'title' => 'Save',
+      'title' => 'Publish',
       'hidden' => 0,
     ),
     'body' => array(
       'region' => 'main',
-      'weight' => '1',
+      'weight' => '2',
       'has_required' => FALSE,
       'title' => 'Specialty Details',
       'hidden' => 0,
     ),
     'field_title_graphic' => array(
       'region' => 'main',
-      'weight' => '2',
+      'weight' => '1',
       'has_required' => FALSE,
       'title' => 'Specialty Graphic',
       'hidden' => 0,

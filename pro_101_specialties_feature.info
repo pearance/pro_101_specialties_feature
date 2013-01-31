@@ -5,6 +5,7 @@ package = Pro 101 Features (G)
 php = 5.2.4
 version = 7.x-1.0
 project = pro_101_specialties_feature
+dependencies[] = colorbox
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
