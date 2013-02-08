@@ -85,7 +85,7 @@ function pro_101_specialties_feature_field_default_fields() {
       'label' => 'Specialty Details',
       'required' => 0,
       'settings' => array(
-        'display_summary' => 0,
+        'display_summary' => 1,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -93,6 +93,10 @@ function pro_101_specialties_feature_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '10',
           'summary_rows' => 5,
         ),

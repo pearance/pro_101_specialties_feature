@@ -125,7 +125,7 @@ function pro_101_specialties_feature_strongarm() {
       'display' => array(
         'flippy_pager' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '2',
             'visible' => FALSE,
           ),
           'full' => array(
