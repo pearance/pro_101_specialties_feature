@@ -14,10 +14,8 @@ function pro_101_specialties_feature_user_default_permissions() {
   $permissions['create specialty content'] = array(
     'name' => 'create specialty content',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
@@ -26,10 +24,8 @@ function pro_101_specialties_feature_user_default_permissions() {
   $permissions['delete any specialty content'] = array(
     'name' => 'delete any specialty content',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
@@ -47,10 +43,8 @@ function pro_101_specialties_feature_user_default_permissions() {
   $permissions['edit any specialty content'] = array(
     'name' => 'edit any specialty content',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
@@ -59,10 +53,8 @@ function pro_101_specialties_feature_user_default_permissions() {
   $permissions['edit own specialty content'] = array(
     'name' => 'edit own specialty content',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
