@@ -10,6 +10,16 @@
 function pro_101_specialties_feature_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: administer specialties vocabulary terms.
+  $permissions['administer specialties vocabulary terms'] = array(
+    'name' => 'administer specialties vocabulary terms',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'vppr',
+  );
+
   // Exported permission: create specialty content.
   $permissions['create specialty content'] = array(
     'name' => 'create specialty content',
@@ -39,6 +49,13 @@ function pro_101_specialties_feature_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete terms in specialties.
+  $permissions['delete terms in specialties'] = array(
+    'name' => 'delete terms in specialties',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: edit any specialty content.
   $permissions['edit any specialty content'] = array(
     'name' => 'edit any specialty content',
@@ -57,6 +74,13 @@ function pro_101_specialties_feature_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit terms in specialties.
+  $permissions['edit terms in specialties'] = array(
+    'name' => 'edit terms in specialties',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: enter specialty revision log entry.
