@@ -149,6 +149,13 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_taxonomy_term__specialties';
+  $strongarm->value = array();
+  $export['field_bundle_settings_taxonomy_term__specialties'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'flippy_firstlast_specialty';
   $strongarm->value = 0;
   $export['flippy_firstlast_specialty'] = $strongarm;
@@ -329,6 +336,13 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->name = 'pathauto_node_specialty_pattern';
   $strongarm->value = 'specialty/[node:title]';
   $export['pathauto_node_specialty_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_specialties_pattern';
+  $strongarm->value = 'tag/[term:name]';
+  $export['pathauto_taxonomy_term_specialties_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
