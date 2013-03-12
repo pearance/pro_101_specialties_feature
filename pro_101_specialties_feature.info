@@ -16,6 +16,7 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = title
 dependencies[] = views
+dependencies[] = views_accordion
 dependencies[] = vppr
 features[context][] = specialties
 features[ctools][] = context:context:3
