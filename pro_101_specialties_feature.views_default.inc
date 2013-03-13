@@ -53,8 +53,13 @@ function pro_101_specialties_feature_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_accordion';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
+      'field' => 'title',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+    1 => array(
       'field' => 'field_title_graphic',
-      'rendered' => 0,
+      'rendered' => 1,
       'rendered_strip' => 0,
     ),
   );
@@ -76,7 +81,7 @@ function pro_101_specialties_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
   $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
-  /* Field: Content: Form Image */
+  /* Field: Content: Photo or Logo */
   $handler->display->display_options['fields']['field_title_graphic']['id'] = 'field_title_graphic';
   $handler->display->display_options['fields']['field_title_graphic']['table'] = 'field_data_field_title_graphic';
   $handler->display->display_options['fields']['field_title_graphic']['field'] = 'field_title_graphic';
