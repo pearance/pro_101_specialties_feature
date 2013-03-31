@@ -311,9 +311,7 @@ function pro_101_specialties_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_specialty';
-  $strongarm->value = array(
-    0 => 'revision',
-  );
+  $strongarm->value = array();
   $export['node_options_specialty'] = $strongarm;
 
   $strongarm = new stdClass();

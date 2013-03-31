@@ -175,6 +175,7 @@ function pro_101_specialties_feature_field_default_fields() {
             'colorbox_gallery' => 'post',
             'colorbox_gallery_custom' => '',
             'colorbox_image_style' => '',
+            'colorbox_multivalue_index' => NULL,
             'colorbox_node_style' => '',
           ),
           'type' => 'colorbox',
@@ -214,11 +215,11 @@ function pro_101_specialties_feature_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
-            0 => 0,
             'audio' => 0,
             'default' => 0,
+            0 => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 0,
